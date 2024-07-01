@@ -1,7 +1,7 @@
-import React from "react";
+import SideNav from "../SideNav/SideNav";
 
 function Home() {
-  return <div> Helloe fromHome</div>;
+  return <SideNav />;
 }
 
 export default Home;
