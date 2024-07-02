@@ -1,0 +1,11 @@
+.temp-container {
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto 4fr; /* Adjust the ratio as needed */
+  height: 100vh;
+  gap: 0.1rem;
+}

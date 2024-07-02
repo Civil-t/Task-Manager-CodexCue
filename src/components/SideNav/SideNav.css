@@ -19,7 +19,7 @@
 
 .menu-bars {
   font-size: 1rem;
-  margin-left: 50%;
+  /* margin-left: 50%;   line to move hamurger menu*/
   background: none;
   background-color: aliceblue;
   width: 30px;
@@ -34,13 +34,13 @@
 
 .nav-menu {
   background-color: #060b26;
-  width: 200px;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: start;
-  position: fixed;
+  position: relative;
   top: 0;
-  left: -100%;
+  /* left: -100%;   line to retract the side na*/
   transition: 850ms;
   border-radius: 0 2% 2% 0;
   flex-direction: column;
