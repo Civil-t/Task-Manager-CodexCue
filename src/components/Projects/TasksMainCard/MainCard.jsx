@@ -1,5 +1,5 @@
 import React from "react";
-import "./MainCard.css";
+import "./Main.css";
 
 function MainCard() {
   return <div>MainCard</div>;
