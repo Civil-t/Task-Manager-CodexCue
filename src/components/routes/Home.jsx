@@ -1,8 +1,16 @@
 import SideNav from "../SideNav/SideNav";
-import "./Home.css";
+import Dashboard from "../Dashboard/Dashboard";
+import "./Project.css";
 
 function Home() {
-  return <h1>Hello from Home</h1>;
+  return (
+    <>
+      <div className="main-container">
+        <SideNav />
+        <Dashboard />
+      </div>
+    </>
+  );
 }
 
 export default Home;
