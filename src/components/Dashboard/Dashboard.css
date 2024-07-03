@@ -1,4 +1,34 @@
 .dash-container {
   background-color: red;
   border-radius: 10px;
+  display: grid;
+  grid-template-rows: 0.5fr 4fr;
+}
+
+#navbar {
+  background-color: aqua;
+}
+
+#body {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+#main-section {
+  background-color: green;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+}
+
+#dash-info {
+  background-color: orange;
+}
+
+#projects-info {
+  background-color: pink;
+}
+
+#side-section {
+  background-color: yellow;
 }
