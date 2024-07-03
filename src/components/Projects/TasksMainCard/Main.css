@@ -1,0 +1,108 @@
+#main-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 10fr;
+}
+
+/* CSS for ribbon just above project categories */
+#ribbon {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+}
+
+#ribbon-details {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  height: 99%;
+}
+
+hr {
+  border: 1px solid #dddddd;
+}
+
+#menu {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#ui-controls {
+  background-color: green;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#ui-controls button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+}
+
+#ui-controls div {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* CSS foe ribbon with categories */
+.category {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.category div {
+  display: flex;
+  gap: 0.3rem;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.category div div {
+  background-color: #dddddd;
+  width: 15px;
+  border: none;
+  border-radius: 15%;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  padding: 0.5% 1%;
+}
+
+#task-option {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* CSS for task cards */
+#task-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.8rem;
+  border: 1px solid black;
+}
+
+#todo-cards {
+  background-color: blueviolet;
+}
+
+#in-progress-cards {
+  background-color: brown;
+}
+
+#in-review-cards {
+  background-color: blue;
+}
+
+#done-cards {
+  background-color: green;
+}

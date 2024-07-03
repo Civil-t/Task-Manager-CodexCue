@@ -3,4 +3,76 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+#header,
+#project-details {
+  border-radius: 5px;
+}
+/* CSS for header with search input and icons */
+#header {
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 10px;
+}
+
+#search,
+#icons {
+  border: 1px solid black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#icons {
+  justify-content: space-around;
+  font-size: 1.7rem;
+}
+
+/* CSS for project details section */
+
+#project-details {
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#owner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+}
+
+#owner button {
+  border: none;
+  padding: auto;
+  border-radius: 3px;
+  background-color: green;
+  height: 20px;
+}
+
+#owner p {
+  color: #bbbbbb;
+}
+
+#owner p span {
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+#team {
+  background-color: darkgoldenrod;
 }

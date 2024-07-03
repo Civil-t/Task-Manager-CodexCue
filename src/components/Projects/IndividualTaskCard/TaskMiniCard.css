@@ -1,0 +1,82 @@
+#individual-task {
+  border: 1.2px solid #dddddd;
+  background-color: white;
+  border-radius: 5px;
+  height: 126px;
+  width: 100%;
+  padding: 5px 0;
+  display: grid;
+  grid-template-rows: 0.1fr 4fr 0.01fr 0.1fr;
+  margin-bottom: 5px;
+}
+
+#category-priority {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+#category {
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  padding: 1px 2px;
+}
+
+#priority {
+  border-radius: 3px;
+  background-color: palevioletred;
+  border: none;
+  padding: 1px 2px;
+}
+
+#task-description {
+  width: 95%;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin: 4px 0;
+  font-size: 12px;
+  padding: 5px;
+}
+
+#deadline {
+  margin: 3px 0;
+  font-weight: bold;
+}
+
+#deadline span {
+  color: #dddddd;
+  margin: 0;
+  font-weight: normal;
+}
+
+#description {
+  color: #dddddd;
+}
+
+#minicard-hr {
+  border: 1px solid #dddddd;
+}
+
+#team-comments {
+  display: flex;
+  align-items: end;
+  font-size: 14px;
+  padding: 5px;
+}
+
+#mini-team {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -3px;
+}
+
+#comments {
+  margin-left: auto;
+}
