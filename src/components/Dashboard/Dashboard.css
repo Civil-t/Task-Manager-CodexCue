@@ -2,11 +2,26 @@
   background-color: red;
   border-radius: 10px;
   display: grid;
-  grid-template-rows: 0.5fr 4fr;
+  grid-template-rows: 1.2fr 5fr;
+  height: 100vh;
+}
+
+#nav {
+  display: grid;
+  grid-template-rows: 20fr 0.7fr;
+}
+
+#hr {
+  border: 1px solid #dddddd;
+  display: flex;
 }
 
 #navbar {
   background-color: aqua;
+  display: grid;
+  grid-template-columns: 4fr 0.7fr;
+  align-items: center;
+  padding: 0 10px;
 }
 
 #body {
@@ -16,19 +31,227 @@
 }
 
 #main-section {
-  background-color: green;
   display: grid;
-  grid-template-rows: 1fr 1.5fr;
+  grid-template-rows: 1.05fr 2.05fr;
+  gap: 10px;
+  height: 100%;
 }
 
 #dash-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: orange;
+  gap: 10px;
+  padding: 0 10px;
+  height: 100%;
 }
 
-#projects-info {
+#prog-circle {
   background-color: pink;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meetings {
+  border: none;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#title-filter {
+  display: flex;
+  gap: 10px;
+}
+
+#filter {
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+  padding: 2px 4px;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+}
+
+#timeframe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2px;
+  font-size: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+  padding: 2px 4px;
+  background-color: gainsboro;
 }
 
 #side-section {
   background-color: yellow;
+  border: 1px solid #dddddd;
+  display: grid;
+  grid-template-rows: 1fr 1.9fr;
+}
+
+#latest-project {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr;
+  padding: 0 0.2rem 0.2rem 0;
+  gap: 5px;
+  background-color: green;
+}
+
+#latest-project h4 {
+  margin-left: 30%;
+}
+
+.latest-progress {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.2rem;
+}
+
+.title-icon {
+  display: flex;
+  gap: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.proj-icon {
+  background-color: blue;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.prog-icon {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.progress-icon {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.progress-icon p {
+  font-size: 12px;
+}
+.prog-num {
+  margin-left: auto;
+}
+
+.progress-bar {
+  background-color: blue;
+  border-radius: 10px;
+  height: 0.2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+/* Calendar.css */
+.schedule {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 10px;
+  margin-bottom: 2px;
+}
+
+#schedule-header {
+  margin: 0px auto 3px 0;
+}
+/* FullCalendar global styles */
+.fc {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: teal;
+  height: 358px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Toolbar styles */
+.fc .fc-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fc-scroller {
+  overflow: hidden !important;
+}
+
+/* Event styles */
+.fc .fc-daygrid-event,
+.fc .fc-timegrid-event {
+  background-color: #e0e7ff;
+  border: none;
+  color: #000;
+  border-radius: 4px;
+}
+
+/* Event title styles */
+.fc .fc-event-title {
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+/* Header styles */
+.fc .fc-header-toolbar {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Day cell styles */
+.fc .fc-daygrid-day {
+  border: 1px solid #eee;
+}
+
+/* Hover effects for events */
+.fc .fc-daygrid-event:hover,
+.fc .fc-timegrid-event:hover {
+  background-color: #d1d5db;
+  cursor: pointer;
+}
+
+/* Adjust day grid sizes */
+.fc .fc-daygrid {
+  font-size: 1em; /* Smaller font size */
+}
+
+.fc .fc-daygrid-day-frame {
+  padding: 2px; /* Adjust padding inside day cells */
+}
+
+.fc .fc-daygrid-day-number {
+  font-size: 0.75em; /* Smaller date number size */
 }

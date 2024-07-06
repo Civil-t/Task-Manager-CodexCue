@@ -1,17 +1,154 @@
 import React from "react";
 import "./Dashboard.css";
+import BarChart from "./BarChart";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import interactionPlugin from "@fullcalendar/interaction";
+
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { CiSettings } from "react-icons/ci";
+import { BsPerson } from "react-icons/bs";
+import { IoFilter } from "react-icons/io5";
+import { FaBarsProgress } from "react-icons/fa6";
+import { FaDiagramProject } from "react-icons/fa6";
 
 function Dashboard() {
+  const events = [
+    {
+      title: "Limbo Website",
+      start: "2023-07-03T00:40:00",
+      end: "2023-07-03T01:20:00",
+    },
+    {
+      title: "Content iOS",
+      start: "2023-07-06T04:00:00",
+      end: "2023-07-06T08:00:00",
+    },
+    { title: "Vacation", start: "2023-07-24", end: "2023-07-28" },
+    // Add more events here
+  ];
+
   return (
     <>
       <div className="dash-container">
-        <div id="navbar">Navbar</div>
+        <div id="nav">
+          <div id="navbar">
+            <h3>Dashboard</h3>
+            <div id="icons">
+              <div id="notification-icon">
+                <IoIosNotificationsOutline />
+              </div>
+              <div id="settings-icon">
+                <CiSettings />
+              </div>
+              <div id="person-icon">
+                <BsPerson />
+              </div>
+            </div>
+          </div>
+          <div id="hr"></div>
+        </div>
         <div id="body">
           <div id="main-section">
-            <div id="dash-info">Dashboard Info</div>
-            <div id="projects-info">Projects</div>
+            <div id="dash-info">
+              <div className="meetings" id="progress">
+                <h4>Overall Progress</h4>
+                <div id="prog-circle">
+                  <h1>89%</h1>
+                  <h5>Progress</h5>
+                </div>
+              </div>
+              <div className="meetings">
+                <h5>Today's Tasks</h5>
+              </div>
+              <div className="meetings">
+                <h5>Today's Meetings</h5>
+              </div>
+            </div>
+
+            <div className="schedule">
+              <h4 id="schedule-header">Schedule</h4>
+              <FullCalendar
+                plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+                initialView="dayGridMonth"
+                events={events}
+                headerToolbar={{
+                  left: "prev,next today",
+                  center: "title",
+                  right: "dayGridMonth,timeGridWeek,timeGridDay",
+                }}
+                eventTimeFormat={{
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  meridiem: false,
+                }}
+              />
+            </div>
           </div>
-          <div id="side-section">Side Section</div>
+          <div id="side-section">
+            <div>
+              <BarChart />
+            </div>
+
+            <div id="latest-project">
+              <h4>Latest Project</h4>
+              <div className="latest-progress">
+                <div className="title-icon">
+                  <div className="proj-icon">
+                    <FaDiagramProject />
+                  </div>
+                  <h5>Project 1</h5>
+                </div>
+                <div>
+                  <div className="progress-icon">
+                    <div className="prog-icon">
+                      <FaBarsProgress />
+                    </div>
+                    <p>Progress</p>
+                    <p className="prog-num">9/12</p>
+                  </div>
+                  <div className="progress-bar"></div>
+                </div>
+              </div>
+              <div className="latest-progress">
+                <div className="title-icon">
+                  <div className="proj-icon">
+                    <FaDiagramProject />
+                  </div>
+                  <h5>Project 2</h5>
+                </div>
+                <div>
+                  <div className="progress-icon">
+                    <div className="prog-icon">
+                      <FaBarsProgress />
+                    </div>
+                    <p>Progress</p>
+                    <p className="prog-num">9/12</p>
+                  </div>
+                  <div className="progress-bar"></div>
+                </div>
+              </div>
+              <div className="latest-progress">
+                <div className="title-icon">
+                  <div className="proj-icon">
+                    <FaDiagramProject />
+                  </div>
+                  <h5>Project 3</h5>
+                </div>
+                <div>
+                  <div className="progress-icon">
+                    <div className="prog-icon">
+                      <FaBarsProgress />
+                    </div>
+                    <p>Progress</p>
+                    <p className="prog-num">9/12</p>
+                  </div>
+                  <div className="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
