@@ -1,6 +1,8 @@
 import React from "react";
 import "./Main.css";
 import MiniCard from "../IndividualTaskCard/TaskMiniCard";
+import CreateTaskModal from "./CreateTaskModal";
+import { useState } from "react";
 
 import { PiDotsNine } from "react-icons/pi";
 import { IoFilter } from "react-icons/io5";
@@ -13,6 +15,8 @@ import { MdDone } from "react-icons/md";
 import { PiDotsThreeBold } from "react-icons/pi";
 
 function MainCard() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <div id="main-container">
@@ -34,10 +38,11 @@ function MainCard() {
                 <BsSortDownAlt />
                 <p>Sort</p>{" "}
               </div>
-              <button>
+              <button onClick={() => setShowModal(true)}>
                 <MdOutlinePostAdd />
                 Add Task
               </button>
+              {showModal && <CreateTaskModal closeModal={setShowModal} />}
             </div>
           </div>
           <hr />
