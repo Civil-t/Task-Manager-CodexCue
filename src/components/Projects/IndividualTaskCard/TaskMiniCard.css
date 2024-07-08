@@ -1,5 +1,4 @@
 #individual-task {
-  border: 1.2px solid #dddddd;
   background-color: white;
   border-radius: 5px;
   height: 126px;
@@ -8,6 +7,8 @@
   display: grid;
   grid-template-rows: 0.1fr 4fr 0.01fr 0.1fr;
   margin-bottom: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 #category-priority {
@@ -22,13 +23,15 @@
   border: 1px solid #dddddd;
   border-radius: 3px;
   padding: 1px 2px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
 }
 
 #priority {
   border-radius: 3px;
-  background-color: palevioletred;
   border: none;
   padding: 1px 2px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: #eeeeee;
 }
 
 #task-description {

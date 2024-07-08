@@ -1,10 +1,27 @@
 .header-container {
-  background-color: red;
-  width: 100%;
+  width: 99.1%;
+  height: 95%;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  padding: 0 5px;
+}
+#proj-hr {
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  height: 90%;
+}
+
+#project-details {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 #header,
@@ -13,7 +30,6 @@
 }
 /* CSS for header with search input and icons */
 #header {
-  background-color: bisque;
   display: grid;
   grid-template-columns: 5fr 1fr;
   gap: 10px;
@@ -21,21 +37,23 @@
 
 #search,
 #icons {
-  border: 1px solid black;
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
 #icons {
-  justify-content: space-around;
-  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  gap: 15px;
+  margin-left: auto;
 }
 
 /* CSS for project details section */
 
 #project-details {
-  background-color: cadetblue;
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
@@ -58,12 +76,12 @@
   border: none;
   padding: auto;
   border-radius: 3px;
-  background-color: green;
+  background-color: #ddd;
   height: 20px;
 }
 
 #owner p {
-  color: #bbbbbb;
+  color: #aaa;
 }
 
 #owner p span {
@@ -74,5 +92,4 @@
 }
 
 #team {
-  background-color: darkgoldenrod;
 }

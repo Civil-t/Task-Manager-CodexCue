@@ -5,13 +5,11 @@
 
 /* CSS for ribbon just above project categories */
 #ribbon {
-  background-color: blueviolet;
   display: flex;
   flex-direction: column;
 }
 
 #ribbon-details {
-  background-color: brown;
   display: flex;
   justify-content: space-between;
   height: 99%;
@@ -22,14 +20,12 @@ hr {
 }
 
 #menu {
-  background-color: blue;
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
 #ui-controls {
-  background-color: green;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -68,7 +64,7 @@ hr {
 }
 
 .category div div {
-  background-color: #dddddd;
+  background-color: #eeeeee;
   width: 15px;
   border: none;
   border-radius: 15%;
@@ -88,21 +84,12 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.8rem;
-  border: 1px solid black;
 }
 
-#todo-cards {
-  background-color: blueviolet;
-}
-
-#in-progress-cards {
-  background-color: brown;
-}
-
-#in-review-cards {
-  background-color: blue;
-}
-
+#todo-cards,
+#in-progress-cards,
+#in-review-cards,
 #done-cards {
-  background-color: green;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }

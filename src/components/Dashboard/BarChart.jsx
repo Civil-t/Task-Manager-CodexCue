@@ -65,9 +65,11 @@ const TaskBarChart = () => {
         backgroundColor: "#000",
         boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
         padding: "2px",
+        width: "96%",
+        marginLeft: "1%",
 
         borderRadius: "10px",
-        border: "1px solid #333",
+        border: "none",
       }}
     >
       <div
@@ -77,7 +79,7 @@ const TaskBarChart = () => {
         }}
       >
         <h4 style={{ color: "#fff", textAlign: "center" }}>Activity</h4>
-        <ResponsiveContainer width="100%" height={175}>
+        <ResponsiveContainer width="100%" height={172}>
           <BarChart
             width={500}
             height={300}

@@ -1,5 +1,4 @@
 .temp-container {
-  background-color: aqua;
   border: none;
   border-radius: 10px;
   margin: 0;
@@ -11,7 +10,6 @@
 }
 
 .home-container {
-  background-color: aqua;
   border: none;
   border-radius: 10px;
   margin: 0;
@@ -32,4 +30,6 @@
 .tasks {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  gap: 0.6rem;
+  padding: 0 5px;
 }

@@ -34,8 +34,8 @@ function Dashboard() {
       <div className="dash-container">
         <div id="nav">
           <div id="navbar">
-            <h3>Dashboard</h3>
-            <div id="icons">
+            <h2>Dashboard</h2>
+            <div id="dash-icons">
               <div id="notification-icon">
                 <IoIosNotificationsOutline />
               </div>
@@ -60,10 +60,69 @@ function Dashboard() {
                 </div>
               </div>
               <div className="meetings">
-                <h5>Today's Tasks</h5>
+                <h5>Task Details</h5>
+                <div id="tasks-particulas">
+                  <div className="tasks-details">
+                    <div className="tasks-dtls-num">9</div>
+                    <div>Total Tasks</div>
+                  </div>
+                  <div className="tasks-details">
+                    <div className="tasks-dtls-num">6</div>
+                    <div>To Do</div>
+                  </div>
+                  <div className="tasks-details">
+                    <div className="tasks-dtls-num">10</div>
+                    <div>In Progress</div>
+                  </div>
+                  <div className="tasks-details">
+                    <div className="tasks-dtls-num">8</div>
+                    <div>Done</div>
+                  </div>
+                </div>
               </div>
               <div className="meetings">
                 <h5>Today's Meetings</h5>
+                <div id="meetings-particulas">
+                  <div className="today-meetings">
+                    <div id="time-icon">
+                      <div id="meridiem-time">
+                        <div id="meridiem">AM</div>
+                        <div id="mtng-time">10:00</div>
+                      </div>
+                      <div>icon</div>
+                    </div>
+                    <div id="meeting-des">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      sed
+                    </div>
+                  </div>
+                  <div className="today-meetings">
+                    <div id="time-icon">
+                      <div id="meridiem-time">
+                        <div id="meridiem">AM</div>
+                        <div id="mtng-time">10:00</div>
+                      </div>
+                      <div>icon</div>
+                    </div>
+                    <div id="meeting-des">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      sed
+                    </div>
+                  </div>
+                  <div className="today-meetings">
+                    <div id="time-icon">
+                      <div id="meridiem-time">
+                        <div id="meridiem">AM</div>
+                        <div id="mtng-time">10:00</div>
+                      </div>
+                      <div>icon</div>
+                    </div>
+                    <div id="meeting-des">
+                      Lorem ipsum dolor sit amet consectetur
+                    </div>
+                  </div>
+                  <div className="today-meetings"></div>
+                </div>
               </div>
             </div>
 

@@ -9,23 +9,28 @@ function Header() {
   return (
     <>
       <div className="header-container">
-        <div id="header">
-          <div id="search">Not sure what to do with this space yet</div>
-          <div id="icons">
-            <div id="notification-icon">
-              <IoIosNotificationsOutline />
+        <div>
+          <div id="header">
+            <div id="search">
+              <h2>Projects</h2>
             </div>
-            <div id="settings-icon">
-              <CiSettings />
-            </div>
-            <div id="person-icon">
-              <BsPerson />
+            <div id="icons">
+              <div id="notification-icon">
+                <IoIosNotificationsOutline />
+              </div>
+              <div id="settings-icon">
+                <CiSettings />
+              </div>
+              <div id="person-icon">
+                <BsPerson />
+              </div>
             </div>
           </div>
+          <div id="proj-hr"></div>
         </div>
         <div id="project-details">
           <div id="details">
-            <h2 id="title">Project Name</h2>
+            <h3 id="title">Project Name</h3>
             <div id="owner">
               <button> In progress</button>
               <p>
