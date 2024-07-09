@@ -31,7 +31,18 @@ function MainCard() {
     };
 
     fetchTasks();
+
+    const savedTask = localStorage.getItem("selectedTask");
+    if (savedTask) {
+      setSelectedTask(JSON.parse(savedTask));
+    }
   }, []);
+
+  useEffect(() => {
+    if (selectedTask) {
+      localStorage.setItem("selectedTask", JSON.stringify(selectedTask));
+    }
+  }, [selectedTask]);
 
   const renderTasks = (status) => {
     return tasks

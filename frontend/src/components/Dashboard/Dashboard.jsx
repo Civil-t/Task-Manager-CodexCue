@@ -9,9 +9,12 @@ import interactionPlugin from "@fullcalendar/interaction";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiSettings } from "react-icons/ci";
 import { BsPerson } from "react-icons/bs";
-import { IoFilter } from "react-icons/io5";
 import { FaBarsProgress } from "react-icons/fa6";
 import { FaDiagramProject } from "react-icons/fa6";
+import { IoIosAddCircleOutline } from "react-icons/io";
+import { FaVideo } from "react-icons/fa6";
+import { RiPresentationFill } from "react-icons/ri";
+import { MdWifiCalling3 } from "react-icons/md";
 
 function Dashboard() {
   const events = [
@@ -81,7 +84,7 @@ function Dashboard() {
                 </div>
               </div>
               <div className="meetings">
-                <h5>Today's Meetings</h5>
+                <h5>Today's Schedule</h5>
                 <div id="meetings-particulas">
                   <div className="today-meetings">
                     <div id="time-icon">
@@ -89,11 +92,12 @@ function Dashboard() {
                         <div id="meridiem">AM</div>
                         <div id="mtng-time">10:00</div>
                       </div>
-                      <div>icon</div>
+                      <div className="meeting-icon">
+                        <FaVideo />
+                      </div>
                     </div>
                     <div id="meeting-des">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit
-                      sed
+                      Video conference with design team
                     </div>
                   </div>
                   <div className="today-meetings">
@@ -102,12 +106,11 @@ function Dashboard() {
                         <div id="meridiem">AM</div>
                         <div id="mtng-time">10:00</div>
                       </div>
-                      <div>icon</div>
+                      <div className="meeting-icon">
+                        <MdWifiCalling3 />
+                      </div>
                     </div>
-                    <div id="meeting-des">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit
-                      sed
-                    </div>
+                    <div id="meeting-des">Call with client</div>
                   </div>
                   <div className="today-meetings">
                     <div id="time-icon">
@@ -115,13 +118,18 @@ function Dashboard() {
                         <div id="meridiem">AM</div>
                         <div id="mtng-time">10:00</div>
                       </div>
-                      <div>icon</div>
+                      <div className="meeting-icon">
+                        <RiPresentationFill />
+                      </div>
                     </div>
-                    <div id="meeting-des">
-                      Lorem ipsum dolor sit amet consectetur
-                    </div>
+                    <div id="meeting-des">Presentation with marketing team</div>
                   </div>
-                  <div className="today-meetings"></div>
+                  <div className="today-meetings" id="schedule-meeting">
+                    <div id="schedule-icon">
+                      <IoIosAddCircleOutline />
+                    </div>
+                    Schedule meeting
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,7 +165,7 @@ function Dashboard() {
                   <div className="proj-icon">
                     <FaDiagramProject />
                   </div>
-                  <h5>Project 1</h5>
+                  <h5>Task Management</h5>
                 </div>
                 <div>
                   <div className="progress-icon">
@@ -167,7 +175,9 @@ function Dashboard() {
                     <p>Progress</p>
                     <p className="prog-num">9/12</p>
                   </div>
-                  <div className="progress-bar"></div>
+                  <div id="bar-container">
+                    <div className="progress-bar"></div>
+                  </div>
                 </div>
               </div>
               <div className="latest-progress">
@@ -175,7 +185,7 @@ function Dashboard() {
                   <div className="proj-icon">
                     <FaDiagramProject />
                   </div>
-                  <h5>Project 2</h5>
+                  <h5>Portfolio Website</h5>
                 </div>
                 <div>
                   <div className="progress-icon">
@@ -183,9 +193,11 @@ function Dashboard() {
                       <FaBarsProgress />
                     </div>
                     <p>Progress</p>
-                    <p className="prog-num">9/12</p>
+                    <p className="prog-num">1/10</p>
                   </div>
-                  <div className="progress-bar"></div>
+                  <div id="bar-container">
+                    <div className="site-progress-bar"></div>
+                  </div>
                 </div>
               </div>
               <div className="latest-progress">
@@ -193,7 +205,7 @@ function Dashboard() {
                   <div className="proj-icon">
                     <FaDiagramProject />
                   </div>
-                  <h5>Project 3</h5>
+                  <h5>SEO</h5>
                 </div>
                 <div>
                   <div className="progress-icon">
@@ -201,9 +213,11 @@ function Dashboard() {
                       <FaBarsProgress />
                     </div>
                     <p>Progress</p>
-                    <p className="prog-num">9/12</p>
+                    <p className="prog-num">0/8</p>
                   </div>
-                  <div className="progress-bar"></div>
+                  <div id="bar-container">
+                    <div className="seo-progress-bar"></div>
+                  </div>
                 </div>
               </div>
             </div>
