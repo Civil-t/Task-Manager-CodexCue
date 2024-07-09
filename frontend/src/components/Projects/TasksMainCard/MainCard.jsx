@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Main.css";
 import MiniCard from "../IndividualTaskCard/TaskMiniCard";
+import TaskDetails from "../TaskDetailsCard/TaskDetails";
 import CreateTaskModal from "./CreateTaskModal";
 import axios from "axios";
 
@@ -34,9 +35,9 @@ function MainCard() {
   const renderTasks = (status) => {
     return tasks
       .filter((task) => task.status === status)
-      .map((task) => (
+      .map((task, index) => (
         <MiniCard
-          key={task.id}
+          key={index}
           category={task.typeOfWork}
           priority={task.priority}
           title={task.title}
@@ -113,6 +114,7 @@ function MainCard() {
           <div id="done-cards">{renderTasks("done")}</div>
         </div>
       </div>
+      <TaskDetails />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./TaskMiniCard.css";
-import { IoPersonOutline } from "react-icons/io5";
+import { IoPersonCircleSharp } from "react-icons/io5";
 import { LiaCommentSolid } from "react-icons/lia";
 
 function TaskMiniCard({ category, priority, title, deadline, description }) {
@@ -22,10 +22,10 @@ function TaskMiniCard({ category, priority, title, deadline, description }) {
         <hr id="minicard-hr" />
         <div id="team-comments">
           <div id="mini-team">
-            <IoPersonOutline />
+            <IoPersonCircleSharp />
           </div>
           <div id="mini-team">
-            <IoPersonOutline />
+            <IoPersonCircleSharp />
           </div>
           <div id="comments">
             <LiaCommentSolid /> 0

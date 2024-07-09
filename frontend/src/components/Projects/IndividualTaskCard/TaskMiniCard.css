@@ -70,16 +70,24 @@
 }
 
 #mini-team {
-  border: 1px solid #dddddd;
   border-radius: 50%;
   height: 16px;
   width: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -3px;
+  margin-right: 0px;
+  padding: 0;
+  font-size: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 #comments {
   margin-left: auto;
+}
+
+#comments {
+  color: #dddddd;
+  display: flex;
+  align-items: center;
 }
