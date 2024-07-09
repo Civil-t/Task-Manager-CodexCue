@@ -28,7 +28,7 @@ function TaskMiniCard({ category, priority, title, deadline, description }) {
             <IoPersonOutline />
           </div>
           <div id="comments">
-            <LiaCommentSolid />
+            <LiaCommentSolid /> 0
           </div>
         </div>
       </div>

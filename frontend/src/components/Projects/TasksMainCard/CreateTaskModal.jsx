@@ -73,7 +73,7 @@ function CreateTaskModal({ closeModal }) {
                 value={formData.typeOfWork}
                 onChange={handleChange}
               >
-                <option>Type Of Work</option>
+                <option>Type Of Work/Team</option>
                 <option value="design">Design</option>
                 <option value="development">Development</option>
                 <option value="frontend">Frontend</option>
