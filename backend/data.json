@@ -18,5 +18,15 @@
     "teamLead": "Me",
     "assignee": "meee",
     "deadline": "2024-07-26"
+  },
+  {
+    "title": "Card Display",
+    "description": "testing task addition to to-do",
+    "typeOfWork": "testing",
+    "status": "to-do",
+    "priority": "high",
+    "teamLead": "Hello",
+    "assignee": "Manager",
+    "deadline": "2024-07-26"
   }
 ]

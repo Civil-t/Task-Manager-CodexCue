@@ -1,12 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 const fs = require("fs");
+const cors = require("cors");
 
 const app = express();
-app.use(cors());
 const PORT = process.env.PORT || 5000;
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -36,7 +36,6 @@ app.post("/api/tasks", (req, res) => {
   res.status(200).json({ message: "Task created successfully" });
 });
 
-// endpoint to retrieve tasks
 app.get("/api/tasks", (req, res) => {
   const tasks = loadJSON("data.json");
   res.status(200).json(tasks);

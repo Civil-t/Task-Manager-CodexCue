@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./CreateTaskModal.css";
 import { IoClose } from "react-icons/io5";
-import tasks from "./TasksData";
 import axios from "axios";
 
 function CreateTaskModal({ closeModal }) {
