@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import "./SideNav.css";
 import * as FaIcons from "react-icons/fa";
-import * as IoIcons from "react-icons/io5";
 import { SidebarData } from "./SideBarData";
-
 import { useState } from "react";
+import logo from "../../images/logo.png";
 
 function SideNav() {
   const [sidebar, setSidebar] = useState(true);
@@ -15,7 +14,7 @@ function SideNav() {
     <>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
         <div className="navbar">
-          <div className="logo"></div>
+          <img src={logo} alt="" className="logo" />
 
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />

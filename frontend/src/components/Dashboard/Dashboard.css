@@ -4,16 +4,18 @@
   grid-template-rows: 1.5fr 4fr;
   height: 100vh;
   gap: 8px;
+  background-color: #eee;
 }
 
 #nav {
   display: grid;
   grid-template-rows: 20fr 0.7fr;
   height: 3rem;
+  background-color: whitesmoke;
 }
 
 #hr {
-  border: 1px solid #dddddd;
+  border: 1px solid #ccc;
   display: flex;
 }
 
@@ -55,6 +57,7 @@
 
 #prog-circle {
   border-radius: 50%;
+  background-color: white;
   width: 8rem;
   height: 8rem;
   display: flex;
@@ -74,6 +77,7 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  background-color: whitesmoke;
 }
 
 #tasks-particulas,
@@ -84,6 +88,7 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
+  background-color: transparent;
 }
 
 .tasks-details {
@@ -94,6 +99,7 @@
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  background-color: white;
 }
 
 .tasks-dtls-num {
@@ -109,6 +115,7 @@
   flex-direction: column;
   gap: 4px;
   padding: 5px;
+  background-color: white;
 }
 
 #time-icon {
@@ -174,20 +181,27 @@
   grid-template-rows: 0.1fr 1fr 1fr 1fr;
   padding: 0 0.2rem 0.2rem 0;
   gap: 5px;
+  background-color: transparent;
 }
 
 #latest-project h4 {
   margin-left: 30%;
 }
 
+.title-icon h5 {
+  color: black;
+}
+
 .latest-progress {
   border-radius: 5px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
   border: none;
   padding: 5px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 0.2rem;
+  background-color: #ccc;
+  color: #888;
 }
 
 .title-icon {
@@ -198,7 +212,8 @@
 }
 
 .proj-icon {
-  background-color: blue;
+  background-color: #444;
+  color: black;
   border-radius: 50%;
   width: 1.2rem;
   height: 1.2rem;
@@ -233,7 +248,7 @@
 }
 
 .progress-bar {
-  background-color: blue;
+  background-color: #444;
   border-radius: 10px;
   height: 0.2rem;
   display: flex;
@@ -256,7 +271,7 @@
 /* FullCalendar global styles */
 .fc {
   font-family: "Arial", sans-serif;
-  color: #333;
+  color: #444;
   height: 350px;
   width: 100%;
   margin: 0 auto;
@@ -269,6 +284,24 @@
 .fc .fc-toolbar {
   display: flex;
   justify-content: space-between;
+  color: #444;
+}
+
+.fc .fc-toolbar button {
+  font-weight: bold;
+  border: none;
+  background-color: transparent !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.fc .fc-toolbar button:hover {
+  background-color: #ddd !important;
+  cursor: pointer;
+  color: #444;
+}
+
+.fc-button-active {
+  color: #444 !important;
 }
 
 .fc-scroller {
@@ -292,14 +325,14 @@
 
 /* Header styles */
 .fc .fc-header-toolbar {
-  background-color: #f4f4f4;
-  border-bottom: 1px solid #ddd;
+  background-color: #ccc;
+  border-bottom: 1px solid #aaa;
   border-radius: 4px 4px 0 0;
 }
 
 /* Day cell styles */
 .fc .fc-daygrid-day {
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
 }
 
 /* Hover effects for events */
@@ -315,7 +348,7 @@
 }
 
 .fc .fc-daygrid-day-frame {
-  padding: 2px; /* Adjust padding inside day cells */
+  padding: 2px;
 }
 
 .fc .fc-daygrid-day-number {

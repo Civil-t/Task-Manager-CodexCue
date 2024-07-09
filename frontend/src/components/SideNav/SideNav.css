@@ -1,27 +1,29 @@
 .navbar {
   background-color: #060b26;
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 4fr 1fr;
   justify-content: end;
   align-items: center;
   background-color: transparent;
+  margin-bottom: 15px;
 }
 
 .logo {
   color: #fff;
   font-size: 1.5rem;
   margin-left: 0.5rem;
-  width: 4rem;
-  height: 4rem;
-  background-color: #1a83ff;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-bars {
   font-size: 1rem;
   /* margin-left: 50%;   line to move hamurger menu*/
   background: none;
-  background-color: aliceblue;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -29,11 +31,11 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  color: #ddd;
 }
 
 .nav-menu {
-  background-color: #060b26;
+  background-color: #aaa;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -55,7 +57,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 16px;
+  padding: 4px 0px 4px 8px;
   list-style: none;
   height: 60px;
 }
@@ -63,7 +65,7 @@
 .nav-text a {
   text-decoration: none;
   color: #f5f5f5;
-  font-size: 18px;
+  font-size: 16px;
   width: 95%;
   height: 100%;
   display: flex;
@@ -72,7 +74,7 @@
 }
 
 .nav-text a:hover {
-  background-color: #1a83ff;
+  background-color: #888;
 }
 
 .nav-menu-items {

@@ -17,9 +17,8 @@ function TaskDetails(props) {
   return (
     <div className="details-container">
       <div id="task-name">
-        <h4>Task Name</h4>
+        <h4>{taskName}</h4>
         <div className="hr"></div>
-        <div>{taskName}</div>
       </div>
       <div id="task-details">
         <div>
@@ -63,7 +62,7 @@ function TaskDetails(props) {
       </div>
       <div id="task-descr">
         <h4>Description</h4>
-        <div>{description}</div> <div className="hr"></div>
+        <div id="detailed-descr">{description}</div> <div className="hr"></div>
       </div>
       <div id="task-comments">
         <div>

@@ -7,6 +7,8 @@
 #ribbon {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 #ribbon-details {
@@ -16,7 +18,7 @@
 }
 
 hr {
-  border: 1px solid #dddddd;
+  border: 1px solid #aaa;
 }
 
 #menu {
@@ -34,9 +36,16 @@ hr {
 
 #ui-controls button {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #aaa;
   border-radius: 5px;
   color: black;
+  padding: 0.25rem 0.4rem;
+}
+
+#ui-controls button:hover {
+  background-color: #aaa;
+  color: white;
+  cursor: pointer;
 }
 
 #ui-controls div {
@@ -51,6 +60,7 @@ hr {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   gap: 0.8rem;
+  background-color: whitesmoke;
 }
 
 .category div {
@@ -58,13 +68,15 @@ hr {
   gap: 0.3rem;
   font-weight: bold;
   font-size: 12px;
-  border: 1px solid black;
+  border: 1px solid #aaa;
   display: flex;
   align-items: center;
+  padding: 1% 1%;
+  border-radius: 2px;
 }
 
 .category div div {
-  background-color: #eeeeee;
+  background-color: #ccc;
   width: 15px;
   border: none;
   border-radius: 15%;
@@ -84,6 +96,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.8rem;
+  background-color: whitesmoke;
 }
 
 #todo-cards,

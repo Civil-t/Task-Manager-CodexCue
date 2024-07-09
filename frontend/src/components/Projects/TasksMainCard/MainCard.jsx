@@ -18,6 +18,7 @@ import { PiDotsThreeBold } from "react-icons/pi";
 function MainCard() {
   const [showModal, setShowModal] = useState(false);
   const [tasks, setTasks] = useState([]);
+  const [selectedTask, setSelectedTask] = useState(null);
 
   useEffect(() => {
     const fetchTasks = async () => {
@@ -43,8 +44,13 @@ function MainCard() {
           title={task.title}
           deadline={task.deadline}
           description={task.description}
+          onClick={() => handleTaskClick(task)}
         />
       ));
+  };
+
+  const handleTaskClick = (task) => {
+    setSelectedTask(task);
   };
 
   return (
@@ -103,7 +109,9 @@ function MainCard() {
           <div>
             <MdDone />
             Done{" "}
-            <div>{tasks.filter((task) => task.status === "done").length}</div>
+            <div>
+              {tasks.filter((task) => task.status === "completed").length}
+            </div>
             <PiDotsThreeBold id="task-option" />
           </div>
         </div>
@@ -111,10 +119,22 @@ function MainCard() {
           <div id="todo-cards">{renderTasks("to-do")}</div>
           <div id="in-progress-cards">{renderTasks("in-progress")}</div>
           <div id="in-review-cards">{renderTasks("in-review")}</div>
-          <div id="done-cards">{renderTasks("done")}</div>
+          <div id="done-cards">{renderTasks("completed")}</div>
         </div>
       </div>
-      <TaskDetails />
+      {selectedTask && (
+        <TaskDetails
+          taskName={selectedTask.title}
+          team={selectedTask.typeOfWork}
+          status={selectedTask.status}
+          lead={selectedTask.teamLead}
+          assignee={selectedTask.assignee}
+          createdDate={selectedTask.createdDate}
+          updatedDate={selectedTask.updatedDate}
+          deadline={selectedTask.deadline}
+          description={selectedTask.description}
+        />
+      )}
     </>
   );
 }

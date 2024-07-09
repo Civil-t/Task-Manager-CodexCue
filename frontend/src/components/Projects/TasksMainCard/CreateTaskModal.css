@@ -1,10 +1,10 @@
 .modal-background {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  bottom: 2%;
-  right: 22%;
-  width: 63.5%;
-  height: 80.5%;
+  bottom: 1.9%;
+  right: 22.4%;
+  width: 65.4%;
+  height: 80%;
   z-index: 100;
 }
 
@@ -71,7 +71,7 @@
   justify-content: space-between;
   width: 90%;
   height: 90%;
-  background-color: #eee;
+  background-color: #ccc;
   gap: 10px;
   border-radius: 10px;
   padding: 15px 15px;

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import { CiSearch } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiSettings } from "react-icons/ci";
 import { BsPerson } from "react-icons/bs";
@@ -30,7 +29,7 @@ function Header() {
         </div>
         <div id="project-details">
           <div id="details">
-            <h3 id="title">Project Name</h3>
+            <h3 id="title">Task Management</h3>
             <div id="owner">
               <button> In progress</button>
               <p>
@@ -44,7 +43,7 @@ function Header() {
           </div>
           <div id="team">
             {" "}
-            Team Profile Pictures not sure if the space is not too big
+            {/* Team Profile Pictures not sure if the space is not too big */}
           </div>
         </div>
       </div>

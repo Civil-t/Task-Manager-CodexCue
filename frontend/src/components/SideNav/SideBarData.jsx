@@ -4,6 +4,7 @@ import * as IoIcons from "react-icons/io";
 import * as FaIcons from "react-icons/fa";
 import { CiSettings } from "react-icons/ci";
 import { RxDashboard } from "react-icons/rx";
+import { FaDiagramProject } from "react-icons/fa6";
 
 export const SidebarData = [
   {
@@ -15,7 +16,7 @@ export const SidebarData = [
   {
     title: "Projects",
     path: "/project",
-    icon: <AiIcons.AiFillAndroid />,
+    icon: <FaDiagramProject />,
     cName: "nav-text",
   },
   {

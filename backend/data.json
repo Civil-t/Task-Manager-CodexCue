@@ -28,5 +28,15 @@
     "teamLead": "Hello",
     "assignee": "Manager",
     "deadline": "2024-07-26"
+  },
+  {
+    "title": "Testing Components",
+    "description": "Test components functionality to dynamically render data ",
+    "typeOfWork": "frontend",
+    "status": "completed",
+    "priority": "high",
+    "teamLead": "Tapiwa",
+    "assignee": "Dombo",
+    "deadline": "2024-07-04"
   }
 ]
