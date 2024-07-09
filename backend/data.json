@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Testing",
+    "description": "form data submission to json",
+    "typeOfWork": "design",
+    "status": "in-progress",
+    "priority": "high",
+    "teamLead": "Tapiwa",
+    "assignee": "Dombo",
+    "deadline": "2024-07-17"
+  },
+  {
+    "title": "Test 2",
+    "description": "second time testing ",
+    "typeOfWork": "development",
+    "status": "in-progress",
+    "priority": "medium",
+    "teamLead": "Me",
+    "assignee": "meee",
+    "deadline": "2024-07-26"
+  }
+]

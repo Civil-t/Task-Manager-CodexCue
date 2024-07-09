@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./CreateTaskModal.css";
 import { IoClose } from "react-icons/io5";
+import tasks from "./TasksData";
+import axios from "axios";
 
 function CreateTaskModal({ closeModal }) {
   const [formData, setFormData] = useState({
@@ -25,20 +27,18 @@ function CreateTaskModal({ closeModal }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Send formData to the backend server
-    const response = await fetch("./taskdata.json", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    if (response.ok) {
-      console.log("Task created successfully");
-      closeModal(false);
-    } else {
-      console.error(error + "Failed to create task");
+    try {
+      // Send formData to the backend server
+      const response = await axios.post(
+        "http://localhost:5000/api/tasks",
+        formData
+      );
+      if (response.status === 200) {
+        console.log("Task created successfully", formData);
+        closeModal(false);
+      }
+    } catch (error) {
+      console.error("Failed to create task", error);
     }
   };
 
